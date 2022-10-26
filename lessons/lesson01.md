@@ -1,0 +1,27 @@
+- install gdb
+- write a c program
+- compile using gcc: gcc test.c -o out
+- compile using gcc: gcc -g test.c -o out
+- run the program in gdb: gdb ./out
+- gdb commands:
+  - run
+  - start
+  - next
+    - reverse-next
+  - list
+  - next <number of steps>
+  - step
+  - break <line>
+  - break <line> if <condition>
+    - break 9 if n = 2
+  - break <function>
+  - continue
+- gdb --silence --tui ./out
+  - help layout
+  - info breakpoints
+  - info locals: all local variables
+  - print <variable>: content of the variable
+  - backtrace: call stack
+  - whatis <variable>: type of variable
+  - ptype <variable>: details of variable
+  - watch <variable>: shows value each time it's value is changed
